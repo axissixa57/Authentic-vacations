@@ -1,6 +1,10 @@
 @import "./resets";
 @import "./homepage";
 @import "./hamburger";
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('../dist/fonts/MuseoSansCyrl\ -\ 900/') format('opentype');
+}
 
 body,
 html {

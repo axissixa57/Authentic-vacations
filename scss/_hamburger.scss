@@ -92,38 +92,4 @@
   .main {
     display: none;
   }
-
-  // /* скрываем верхнее меню, отменяем обтекание, позиционируем его, сместив на высоту шапки сайта */
-  // #menu {
-  //     max-height: 0;
-  //     background: white;
-  //     float: none;
-  //     position: absolute;
-  //     overflow: hidden;
-  //     top: 63px;
-  //     right: 0;
-  //     left: 0;
-  //     margin: 0;
-  //     padding: 0;
-  //     z-index: 3;
-  // }
-
-  // /* делаем элементы списка блочными, чтобы они располагались друг под другом */
-  // #menu li {
-  //     display: block;
-  //     text-align: center;
-  //     border-bottom: 1px solid #EBEBE3;
-  //     margin-right: 0;
-  // }
-
-  // /* отменяем обтекание левой и правой колонок, устанавливаем им ширину 100%*/
-  // .posts-list,
-  // aside {
-  //     width: 100%;
-  //     float: none;
-  // }
-
-  // .widget-post-title {
-  //     font-size: 1.5em;
-  // }
 }

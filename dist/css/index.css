@@ -29,18 +29,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
-  width: 478px;
+  width: 888px;
 }
 
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -108,6 +106,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .main__right-side-block {
+  padding: 206px 308px 288px 287px;
   width: 888px;
   background-image: url("../img/jasper-van-der-meij-unsplash.png");
 }
@@ -127,15 +126,26 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 95px 16px 184px 130px;
 }
 
+.sidebar__header {
+  position: relative;
+}
+
 .sidebar__header h1 {
+  position: relative;
   font-family: "Libre Franklin", sans-serif;
   font-size: 48px;
   font-weight: 300;
   color: #ffffff;
+  z-index: 1;
 }
 
-.sidebar__header h1 span {
-  padding-left: 7px;
+.sidebar__gradient {
+  position: absolute;
+  top: 10px;
+  left: 144px;
+  opacity: 0.39;
+  width: 195px;
+  height: 44px;
   background-image: -webkit-gradient(linear, left top, right top, from(#16c2b8), to(rgba(22, 194, 184, 0)));
   background-image: linear-gradient(to right, #16c2b8, rgba(22, 194, 184, 0));
 }
@@ -161,7 +171,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-family: "Libre Franklin", sans-serif;
   font-size: 12px;
   font-weight: 600;
-  line-height: 2;
+  line-height: 6;
   letter-spacing: 0.6px;
   text-align: center;
   color: #ffffff;
@@ -182,6 +192,44 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .sidebar__footer a {
   color: #16c2b8;
   text-decoration: none;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 293px;
+  height: 87px;
+  background-color: #317b6c;
+}
+
+.slider__title {
+  opacity: 0.42;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+.slider__content {
+  opacity: 0.65;
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 1.41px;
+  color: #ffffff;
+  line-height: 0.9;
 }
 
 .choice-location__list {
@@ -269,6 +317,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   top: -7px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.footer {
+  height: 57px;
 }
 
 .nav-toggle {
@@ -359,6 +411,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .main {
     display: none;
   }
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url("../dist/fonts/MuseoSansCyrl - 900/") format("opentype");
 }
 
 body,
