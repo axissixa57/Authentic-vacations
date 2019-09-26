@@ -1,5 +1,6 @@
 @import "./resets";
 @import "./homepage";
+@import "./hamburger";
 
 body,
 html {
@@ -13,4 +14,10 @@ body {
   background-color: #ffffff;
   width: 1366px;
   margin: 0 auto;
+}
+
+@media (max-width: 375px) {
+  body {
+    width: 376px;
+  }
 }

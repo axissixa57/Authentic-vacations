@@ -1,0 +1,129 @@
+.nav-toggle {
+  display: none;
+  position: relative;
+  float: right;
+  width: 60px;
+  height: 60px;
+  background: #ebf3ff;
+  border-right: solid 0.5px #8ca0bf;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  position: absolute;
+  width: 19px;
+  top: 27px;
+  bottom: 32px;
+  left: 20px;
+  right: 21px;
+  height: 1px;
+  background: #0d3a7f;
+}
+
+.nav-toggle span:before,
+.nav-toggle span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #0d3a7f;
+}
+
+.nav-toggle span:before {
+  top: -5px;
+}
+
+.nav-toggle span:after {
+  bottom: -5px;
+}
+
+@media (max-width: 375px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .header {
+    height: 60px;
+  }
+
+  .logo {
+    width: 256px;
+    &__image {
+      width: 108px;
+      height: 44px;
+      margin: 7px 20px 9px;
+    }
+  }
+
+  .menu {
+    width: 59px;
+    &__list {
+      display: none;
+    }
+  }
+
+  .menu-services {
+    &__item {
+      display: none;
+      &--dark-blue {
+        display: flex;
+        width: 59px;
+        height: 60px;
+        position: relative;
+
+        &::after {
+          display: block;
+          position: absolute;
+          top: 18.5px;
+          left: 37px;
+          content: "";
+          width: 7px;
+          height: 7px;
+          border-radius: 30px;
+          background-color: #43d9d1;
+        }
+      }
+    }
+  }
+
+  .main {
+    display: none;
+  }
+
+  // /* скрываем верхнее меню, отменяем обтекание, позиционируем его, сместив на высоту шапки сайта */
+  // #menu {
+  //     max-height: 0;
+  //     background: white;
+  //     float: none;
+  //     position: absolute;
+  //     overflow: hidden;
+  //     top: 63px;
+  //     right: 0;
+  //     left: 0;
+  //     margin: 0;
+  //     padding: 0;
+  //     z-index: 3;
+  // }
+
+  // /* делаем элементы списка блочными, чтобы они располагались друг под другом */
+  // #menu li {
+  //     display: block;
+  //     text-align: center;
+  //     border-bottom: 1px solid #EBEBE3;
+  //     margin-right: 0;
+  // }
+
+  // /* отменяем обтекание левой и правой колонок, устанавливаем им ширину 100%*/
+  // .posts-list,
+  // aside {
+  //     width: 100%;
+  //     float: none;
+  // }
+
+  // .widget-post-title {
+  //     font-size: 1.5em;
+  // }
+}

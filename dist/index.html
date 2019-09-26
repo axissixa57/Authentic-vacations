@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AV_Homepage</title>
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,600&display=swap" rel="stylesheet">
-    <title>AV_Homepage</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 
 <body>
     <header class="header">
+        <div class="nav-toggle">
+            <span></span>
+        </div>
         <div class="logo">
             <svg class="logo__image" xmlns="http://www.w3.org/2000/svg" width="129" height="53" viewBox="0 0 129 53">
                 <g fill="none" fill-rule="evenodd">
@@ -25,7 +29,7 @@
             </svg>
         </div>
         <div class="menu">
-            <nav class="menu__nav">
+            <ul class="menu__list">
                 <li class="menu__item">
                     <a href="#" class="menu__link">DESTINATIONS</a>
                 </li>
@@ -35,7 +39,7 @@
                 <li class="menu__item">
                     <a href="#" class="menu__link">About Us</a>
                 </li>
-            </nav>
+            </ul>
             <nav class="menu-services__list">
                 <div class="menu-services__item">
                     <svg class="menu-services__item-phone" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -74,8 +78,16 @@
             </nav>
         </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+        <div class="main__left-side-block"></div>
+        <div class="main__right-side-block"></div>
+    </main>
     <footer class="footer"></footer>
+    <script>
+        $('.nav-toggle').on('click', function () {
+            $('.menu__list').toggleClass('menu__list--active');
+        });
+    </script>
 </body>
 
 </html>

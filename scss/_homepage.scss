@@ -6,7 +6,7 @@
 .logo {
   width: 478px;
   background-color: #ebf3ff;
-  svg {
+  &__image {
     margin: 18px 131px 18px;
   }
 }
@@ -16,7 +16,7 @@
   flex: 1 1;
   width: 478px;
 
-  &__nav {
+  &__list {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -52,9 +52,28 @@
     width: 89px;
     height: 89px;
     border-left: solid 0.5px #8ca0bf;
+    &:hover {
+      cursor: pointer;
+    }
 
     &--dark-blue {
       background-color: #0d3a7f;
     }
+  }
+}
+
+.main {
+  display: flex;
+  &__left-side-block {
+    height: 581px;
+    width: 478px;
+    background-color: #0d3a7f;
+  }
+
+  &__right-side-block {
+    height: 581px;
+    // flex: 1 1;
+    width: 888px;
+    background-image: url("../img/jasper-van-der-meij-unsplash.png");
   }
 }

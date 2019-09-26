@@ -18,7 +18,7 @@
   background-color: #ebf3ff;
 }
 
-.logo svg {
+.logo__image {
   margin: 18px 131px 18px;
 }
 
@@ -32,7 +32,7 @@
   width: 478px;
 }
 
-.menu__nav {
+.menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,8 +83,120 @@
   border-left: solid 0.5px #8ca0bf;
 }
 
+.menu-services__item:hover {
+  cursor: pointer;
+}
+
 .menu-services__item--dark-blue {
   background-color: #0d3a7f;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__left-side-block {
+  height: 581px;
+  width: 478px;
+  background-color: #0d3a7f;
+}
+
+.main__right-side-block {
+  height: 581px;
+  width: 888px;
+  background-image: url("../img/jasper-van-der-meij-unsplash.png");
+}
+
+.nav-toggle {
+  display: none;
+  position: relative;
+  float: right;
+  width: 60px;
+  height: 60px;
+  background: #ebf3ff;
+  border-right: solid 0.5px #8ca0bf;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  position: absolute;
+  width: 19px;
+  top: 27px;
+  bottom: 32px;
+  left: 20px;
+  right: 21px;
+  height: 1px;
+  background: #0d3a7f;
+}
+
+.nav-toggle span:before,
+.nav-toggle span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #0d3a7f;
+}
+
+.nav-toggle span:before {
+  top: -5px;
+}
+
+.nav-toggle span:after {
+  bottom: -5px;
+}
+
+@media (max-width: 375px) {
+  .nav-toggle {
+    display: block;
+  }
+  .header {
+    height: 60px;
+  }
+  .logo {
+    width: 256px;
+  }
+  .logo__image {
+    width: 108px;
+    height: 44px;
+    margin: 7px 20px 9px;
+  }
+  .menu {
+    width: 59px;
+  }
+  .menu__list {
+    display: none;
+  }
+  .menu-services__item {
+    display: none;
+  }
+  .menu-services__item--dark-blue {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 59px;
+    height: 60px;
+    position: relative;
+  }
+  .menu-services__item--dark-blue::after {
+    display: block;
+    position: absolute;
+    top: 18.5px;
+    left: 37px;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 30px;
+    background-color: #43d9d1;
+  }
+  .main {
+    display: none;
+  }
 }
 
 body,
@@ -98,5 +210,11 @@ body {
   background-color: #ffffff;
   width: 1366px;
   margin: 0 auto;
+}
+
+@media (max-width: 375px) {
+  body {
+    width: 376px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
