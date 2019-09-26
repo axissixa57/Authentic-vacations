@@ -46,16 +46,45 @@
           flex: 1 1;
 }
 
+.menu__item {
+  list-style-type: none;
+}
+
+.menu__link {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.83;
+  letter-spacing: 0.6px;
+  color: #364459;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .menu-services__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  width: 262px;
+}
+
+.menu-services__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 262px;
+  width: 89px;
+  height: 89px;
+  border-left: solid 0.5px #8ca0bf;
+}
+
+.menu-services__item--dark-blue {
+  background-color: #0d3a7f;
 }
 
 body,

@@ -23,10 +23,38 @@
     flex: 1 1;
   }
 
-  &-services__list {
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.83;
+    letter-spacing: 0.6px;
+    color: #364459;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+.menu-services {
+  &__list {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 262px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 89px;
+    height: 89px;
+    border-left: solid 0.5px #8ca0bf;
+
+    &--dark-blue {
+      background-color: #0d3a7f;
+    }
   }
 }
