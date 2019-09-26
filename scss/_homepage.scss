@@ -52,8 +52,10 @@
     width: 89px;
     height: 89px;
     border-left: solid 0.5px #8ca0bf;
+
     &:hover {
       cursor: pointer;
+      // background-color: #0d3a7f;
     }
 
     &--dark-blue {
@@ -64,16 +66,161 @@
 
 .main {
   display: flex;
+  position: relative;
+  height: 581px;
+
   &__left-side-block {
-    height: 581px;
     width: 478px;
     background-color: #0d3a7f;
   }
 
   &__right-side-block {
-    height: 581px;
-    // flex: 1 1;
     width: 888px;
     background-image: url("../img/jasper-van-der-meij-unsplash.png");
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    left: 127px;
+    width: 1112px;
+    height: 88px;
+    background-color: #fff;
+    box-shadow: 0 6px 21px 0 rgba(140, 160, 191, 0.24);
+  }
+}
+
+.sidebar {
+  padding: 95px 16px 184px 130px;
+
+  &__header {
+    h1 {
+      font-family: "Libre Franklin", sans-serif;
+      font-size: 48px;
+      font-weight: 300;
+      color: #ffffff;
+
+      span {
+        padding-left: 7px;
+        background-image: linear-gradient(to right, #16c2b8, rgba(22, 194, 184, 0));
+      }
+    }
+  }
+
+  &__text {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.57;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    padding-top: 15px;
+  }
+
+  &__button {
+    padding-top: 29px;
+    button {
+      width: 218px;
+      height: 65px;
+      background-color: #16c2b8;
+      font-family: "Libre Franklin", sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 2;
+      letter-spacing: 0.6px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      border: 0;
+    }
+  }
+
+  &__footer {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.83;
+    letter-spacing: 0.6px;
+    color: #ffffff;
+    padding-top: 11px;
+    a {
+      color: #16c2b8;
+      text-decoration: none;
+    }
+  }
+}
+
+.choice-location {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    height: 100%;
+    padding: 33px 24px;
+    border-left: solid 0.3px #8ca0bf;
+
+    &:nth-child(1) {
+      width: 606px;
+    }
+    &:nth-child(2) {
+      width: 207px;
+    }
+    &:nth-child(3) {
+      width: 210px;
+    }
+    &:nth-child(4) {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      width: 89px;
+      background-color: #16c2b8;
+      cursor: pointer;
+    }
+  }
+
+  &__text {
+    margin-left: 10px;
+
+    p {
+      font-family: "Libre Franklin", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.57;
+      letter-spacing: 0.47px;
+      color: #364459;
+    }
+  }
+
+  &__arrow {
+    background: #fff;
+    height: 1px;
+    width: 40px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: "";
+      background: #fff;
+      position: absolute;
+      height: 1px;
+      width: 20px;
+    }
+
+    &:before {
+      right: -6px;
+      bottom: -7px;
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      right: -6px;
+      top: -7px;
+      transform: rotate(45deg);
+    }
   }
 }

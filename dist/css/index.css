@@ -1,9 +1,12 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
-  outline: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header {
@@ -95,18 +98,177 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  height: 581px;
 }
 
 .main__left-side-block {
-  height: 581px;
   width: 478px;
   background-color: #0d3a7f;
 }
 
 .main__right-side-block {
-  height: 581px;
   width: 888px;
   background-image: url("../img/jasper-van-der-meij-unsplash.png");
+}
+
+.main__footer {
+  position: absolute;
+  bottom: 0;
+  left: 127px;
+  width: 1112px;
+  height: 88px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 6px 21px 0 rgba(140, 160, 191, 0.24);
+          box-shadow: 0 6px 21px 0 rgba(140, 160, 191, 0.24);
+}
+
+.sidebar {
+  padding: 95px 16px 184px 130px;
+}
+
+.sidebar__header h1 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.sidebar__header h1 span {
+  padding-left: 7px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#16c2b8), to(rgba(22, 194, 184, 0)));
+  background-image: linear-gradient(to right, #16c2b8, rgba(22, 194, 184, 0));
+}
+
+.sidebar__text {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+  padding-top: 15px;
+}
+
+.sidebar__button {
+  padding-top: 29px;
+}
+
+.sidebar__button button {
+  width: 218px;
+  height: 65px;
+  background-color: #16c2b8;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.sidebar__footer {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.83;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  padding-top: 11px;
+}
+
+.sidebar__footer a {
+  color: #16c2b8;
+  text-decoration: none;
+}
+
+.choice-location__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choice-location__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding: 33px 24px;
+  border-left: solid 0.3px #8ca0bf;
+}
+
+.choice-location__item:nth-child(1) {
+  width: 606px;
+}
+
+.choice-location__item:nth-child(2) {
+  width: 207px;
+}
+
+.choice-location__item:nth-child(3) {
+  width: 210px;
+}
+
+.choice-location__item:nth-child(4) {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 89px;
+  background-color: #16c2b8;
+  cursor: pointer;
+}
+
+.choice-location__text {
+  margin-left: 10px;
+}
+
+.choice-location__text p {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: 0.47px;
+  color: #364459;
+}
+
+.choice-location__arrow {
+  background: #fff;
+  height: 1px;
+  width: 40px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.choice-location__arrow:before, .choice-location__arrow:after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  height: 1px;
+  width: 20px;
+}
+
+.choice-location__arrow:before {
+  right: -6px;
+  bottom: -7px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.choice-location__arrow:after {
+  right: -6px;
+  top: -7px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .nav-toggle {

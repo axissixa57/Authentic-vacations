@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AV_Homepage</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500,600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 
@@ -49,7 +49,8 @@
                     </svg>
                 </div>
                 <div class="menu-services__item">
-                    <svg class="menu-services__item-account" xmlns="http://www.w3.org/2000/svg" width="15" height="21" viewBox="0 0 15 21">
+                    <svg class="menu-services__item-account" xmlns="http://www.w3.org/2000/svg" width="15" height="21"
+                        viewBox="0 0 15 21">
                         <g fill="none" fill-rule="evenodd" stroke="#242C33" stroke-linecap="round"
                             transform="translate(1 1)">
                             <circle cx="6.5" cy="3.5" r="3.5" />
@@ -58,7 +59,8 @@
                     </svg>
                 </div>
                 <div class="menu-services__item menu-services__item--dark-blue">
-                    <svg class="menu-services__item-cart" xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 23 19">
+                    <svg class="menu-services__item-cart" xmlns="http://www.w3.org/2000/svg" width="23" height="19"
+                        viewBox="0 0 23 19">
                         <g fill="none" fill-rule="evenodd">
                             <path d="M.5 1.5l5.377 2.878-.69-2.878H.5zm7.187 10.437H20L5.877 4.378l1.81 7.56z" />
                             <path stroke="#FFF" stroke-linecap="round" d="M.5 1.5h4.687l2.5 10.438H20" />
@@ -79,8 +81,75 @@
         </div>
     </header>
     <main class="main">
-        <div class="main__left-side-block"></div>
+        <div class="main__left-side-block">
+            <div class="sidebar">
+                <div class="sidebar__header">
+                    <h1>Travel <span>Agents</span> Portal</h1>
+                </div>
+                <div class="sidebar__text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
+                </div>
+                <div class="sidebar__button">
+                    <button>Create an Account</button>
+                </div>
+                <div class="sidebar__footer">
+                    <p>Have an Account Already? <a href="#">Login Now</a></p>
+                </div>
+            </div>
+        </div>
         <div class="main__right-side-block"></div>
+        <div class="main__footer choice-location__list">
+            <div class="choice-location__item">
+                <div class="choice-location__icon">
+                    <svg class="choice-location__icon--pin" xmlns="http://www.w3.org/2000/svg" width="15" height="25"
+                        viewBox="0 0 15 25">
+                        <g fill="#242C33" fill-rule="nonzero">
+                            <path
+                                d="M7.5 0C3.364 0 0 3.485 0 7.768c0 5.357 4.848 12.908 7 16.445.139.228.43.297.65.153a.499.499 0 0 0 .148-.674C4.019 17.481.943 11.82.943 7.768.943 4.023 3.885.977 7.5.977s6.557 3.046 6.557 6.79c0 6.082-6.86 15.67-6.93 15.763a.5.5 0 0 0 .085.685.459.459 0 0 0 .661-.088C8.164 23.737 15 14.183 15 7.767 15 3.486 11.635 0 7.5 0z" />
+                            <path
+                                d="M7.5 4.99a.495.495 0 0 0 0-.99C5.57 4 4 5.57 4 7.5S5.57 11 7.5 11 11 9.43 11 7.5a3.47 3.47 0 0 0-.71-2.115.495.495 0 0 0-.79.599c.334.439.51.963.51 1.516a2.513 2.513 0 0 1-2.51 2.51A2.513 2.513 0 0 1 4.99 7.5 2.513 2.513 0 0 1 7.5 4.99z" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="choice-location__text">
+                    <p>Where do you want to go?</p>
+                </div>
+            </div>
+            <div class="choice-location__item">
+                <div class="choice-location__icon">
+                    <svg class="choice-location__icon--group" xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                        viewBox="0 0 23 23">
+                        <g fill="none" fill-rule="evenodd" stroke="#242C33">
+                            <rect width="22" height="22" x=".5" y=".5" rx="2" />
+                            <path
+                                d="M11.23 16.853L7.999 17.95l.044-3.414L6 11.8l3.26-1.013L11.23 8l1.972 2.787 3.26 1.013-2.042 2.736.044 3.414z" />
+                            <path stroke-linecap="round" d="M1 5h18.5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="choice-location__text">
+                    <p>When</p>
+                </div>
+            </div>
+            <div class="choice-location__item">
+                <div class="choice-location__icon">
+                    <svg class="choice-location__icon--bed" xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 26 20">
+                        <g fill="none" fill-rule="nonzero" stroke="#242C33">
+                            <path
+                                d="M12.933 5.283v6.521H4.9a1.5 1.5 0 0 1-1.5-1.5V1a.5.5 0 0 0-.5-.5H1a.5.5 0 0 0-.5.5v18a.5.5 0 0 0 .5.5h1.9a.5.5 0 0 0 .5-.5v-2.783a1.5 1.5 0 0 1 1.5-1.5h16.2a1.5 1.5 0 0 1 1.5 1.5V19a.5.5 0 0 0 .5.5H25a.5.5 0 0 0 .5-.5v-7.26l.001-.401c-.225-3.285-2.967-6.056-6.001-6.056h-6.567z" />
+                            <path
+                                d="M9 10c1.114 0 2-.886 2-2 0-1.114-.886-2-2-2-1.114 0-2 .886-2 2 0 1.114.886 2 2 2z" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="choice-location__text">
+                    <p>Duration</p>
+                </div>
+            </div>
+            <div class="choice-location__item">
+                <div class="choice-location__arrow"></div>
+            </div>
+        </div>
     </main>
     <footer class="footer"></footer>
     <script>
