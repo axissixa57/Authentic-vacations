@@ -115,8 +115,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   position: absolute;
   bottom: 0;
   left: 127px;
-  width: 1112px;
-  height: 88px;
   background-color: #fff;
   -webkit-box-shadow: 0 6px 21px 0 rgba(140, 160, 191, 0.24);
           box-shadow: 0 6px 21px 0 rgba(140, 160, 191, 0.24);
@@ -276,8 +274,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
-  padding: 33px 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 89px;
   border-left: solid 0.3px #8ca0bf;
 }
 
@@ -294,16 +294,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .choice-location__item:nth-child(4) {
-  padding: 0;
+  width: 89px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 89px;
   background-color: #16c2b8;
   cursor: pointer;
+}
+
+.choice-location__icon {
+  margin-left: 24px;
+  margin-bottom: -5px;
 }
 
 .choice-location__text {
@@ -481,24 +485,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     display: none;
   }
   .main__footer {
-    display: block;
     position: absolute;
     bottom: 0;
     left: 20px;
-    width: 335px;
-    height: 239px;
-    background-color: #fff;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   .choice-location__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 335px;
   }
   .choice-location__item {
     display: -webkit-box;
@@ -507,9 +503,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100%;
-    width: 100%;
-    padding: 0px 0 0 18px;
+    height: 60px;
+    padding: 0 0 0 18px;
     border-left: 0;
   }
   .choice-location__item:nth-child(1) {
@@ -526,6 +521,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding: 0;
     margin: 0;
     width: 100%;
+  }
+  .choice-location__icon {
+    margin: 0;
   }
   .choice-location__text p {
     margin-bottom: 5px;

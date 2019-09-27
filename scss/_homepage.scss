@@ -84,8 +84,6 @@
     position: absolute;
     bottom: 0;
     left: 127px;
-    width: 1112px;
-    height: 88px;
     background-color: #fff;
     box-shadow: 0 6px 21px 0 rgba(140, 160, 191, 0.24);
   }
@@ -224,8 +222,8 @@
 
   &__item {
     display: flex;
-    height: 100%;
-    padding: 33px 24px;
+    align-items: center;
+    height: 89px;
     border-left: solid 0.3px #8ca0bf;
 
     &:nth-child(1) {
@@ -238,13 +236,17 @@
       width: 210px;
     }
     &:nth-child(4) {
-      padding: 0;
+      width: 89px;
       display: flex;
       align-items: center;
-      width: 89px;
       background-color: #16c2b8;
       cursor: pointer;
     }
+  }
+
+  &__icon {
+    margin-left: 24px;
+    margin-bottom: -5px;
   }
 
   &__text {
