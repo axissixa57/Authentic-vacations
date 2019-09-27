@@ -106,7 +106,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .main__right-side-block {
-  padding: 206px 308px 288px 287px;
+  padding: 206px 308px 0 287px;
   width: 888px;
   background-image: url("../img/jasper-van-der-meij-unsplash.png");
 }
@@ -171,12 +171,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-family: "Libre Franklin", sans-serif;
   font-size: 12px;
   font-weight: 600;
-  line-height: 6;
+  line-height: 2;
   letter-spacing: 0.6px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   border: 0;
+  cursor: pointer;
 }
 
 .sidebar__footer {
@@ -194,7 +195,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   text-decoration: none;
 }
 
-.slider {
+.slider__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,6 +231,36 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   letter-spacing: 1.41px;
   color: #ffffff;
   line-height: 0.9;
+}
+
+.slider__switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  width: 123px;
+  margin: 0 93px;
+}
+
+.slider__diamond {
+  width: 9px;
+  height: 9px;
+  border: 1px solid #fff;
+  margin-right: 5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.slider__diamond:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.slider__diamond--active {
+  background-color: #fff;
 }
 
 .choice-location__list {
@@ -346,8 +377,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background: #0d3a7f;
 }
 
-.nav-toggle span:before,
-.nav-toggle span:after {
+.nav-toggle span:before, .nav-toggle span:after {
   content: "";
   position: absolute;
   display: block;
@@ -408,14 +438,73 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-radius: 30px;
     background-color: #43d9d1;
   }
+  .remove-all-styles {
+    all: initial;
+  }
+  .remove-all-styles * {
+    all: unset;
+  }
   .main {
+    display: block;
+    height: 717px;
+  }
+  .main__left-side-block {
+    position: relative;
+    width: 375px;
+    height: 717px;
+    background-image: url("../img/jasper-van-der-meij-unsplash-mobile.png");
+  }
+  .main__left-side-block .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 101px 67px 0 61px;
+  }
+  .main__left-side-block .sidebar__header h1 {
+    font-size: 36px;
+    letter-spacing: 0.9px;
+    text-align: center;
+  }
+  .main__left-side-block .sidebar__gradient {
+    top: 0px;
+    left: 113px;
+  }
+  .main__left-side-block .sidebar__text {
+    width: 247px;
+    height: 51px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 7px;
+  }
+  .main__right-side-block {
+    display: none;
+  }
+  .main__footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 335px;
+    height: 239px;
+    background-color: #fff;
+  }
+  .footer {
     display: none;
   }
 }
 
 @font-face {
-  font-family: 'Museo Sans Cyrl';
-  src: url("../dist/fonts/MuseoSansCyrl - 900/") format("opentype");
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/MuseoSansCyrl-900/.eot");
+  src: url("../fonts/MuseoSansCyrl-900/.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-900/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900/MuseoSansCyrl-900.ttf") format("truetype"), url("../fonts/MuseoSansCyrl-900/.svg#aller") format("svg");
+  font-weight: 900;
+  font-style: normal;
 }
 
 body,
@@ -433,7 +522,7 @@ body {
 
 @media (max-width: 375px) {
   body {
-    width: 376px;
+    width: 375px;
   }
 }
 /*# sourceMappingURL=index.css.map */

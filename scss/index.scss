@@ -1,10 +1,22 @@
 @import "./resets";
 @import "./homepage";
 @import "./hamburger";
-@font-face {
-  font-family: 'Museo Sans Cyrl';
-  src: url('../dist/fonts/MuseoSansCyrl\ -\ 900/') format('opentype');
+
+@mixin font($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file+'.eot');
+    src: url($font-file+'.eot?#iefix') format('embedded-opentype'),
+         url($font-file+'MuseoSansCyrl-900.woff') format('woff'),
+         url($font-file+'MuseoSansCyrl-900.ttf') format('truetype'),
+         url($font-file+'.svg#aller') format('svg');
+    font-weight: 900;
+    font-style: normal;
+  }
 }
+
+
+@include font('Museo Sans Cyrl', '../fonts/MuseoSansCyrl-900/');
 
 body,
 html {
@@ -22,6 +34,6 @@ body {
 
 @media (max-width: 375px) {
   body {
-    width: 376px;
+    width: 375px;
   }
 }
