@@ -260,6 +260,26 @@
       letter-spacing: 0.47px;
       color: #364459;
     }
+
+    &--input {
+      display: none;
+      border: none;
+      font-family: "Libre Franklin", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.57;
+      letter-spacing: 0.47px;
+      margin-bottom: 5px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::-webkit-input-placeholder {
+        opacity: 0.29;
+        color: #364459;
+      }
+    }
   }
 
   &__arrow {

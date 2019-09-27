@@ -128,7 +128,7 @@
                 </div>
                 <div class="choice-location__text">
                     <p>Where do you want to go?</p>
-                    <!-- <input class="choice-location__text--input" type="text" placeholder="Italy, China, etc."> -->
+                    <input class="choice-location__text--input" type="text" placeholder="Italy, China, etc.">
                 </div>
             </div>
             <div class="choice-location__item">
@@ -170,8 +170,28 @@
     </main>
     <footer class="footer"></footer>
     <script>
+        const choiceLocationItemsExceptFirst = $('.choice-location__item:not(:first-child)');
+
         $('.nav-toggle').on('click', function () {
             $('.menu__list').toggleClass('menu__list--active');
+        });
+
+        $('.choice-location__item:nth-child(1)').on('click', () => {
+            const secondElement = $('.choice-location__item:nth-child(2)');
+            if (secondElement.css('display') === 'none') {
+                choiceLocationItemsExceptFirst.css({ 'display': 'flex' });
+                $('.main').css('padding', 0);
+                $('.choice-location__text p').css('display', 'none');
+                $('.choice-location__text--input').css('display', 'block');
+                $('.choice-location__text--input').focus();
+            }
+        });
+
+        $('.choice-location__text--input').blur(() => {
+            choiceLocationItemsExceptFirst.css({ 'display': 'none' });
+            $('.choice-location__text--input').css('display', 'none');
+            $('.choice-location__text p').css('display', 'block');
+            $('.main').css('padding-bottom', '47px');
         });
     </script>
 </body>

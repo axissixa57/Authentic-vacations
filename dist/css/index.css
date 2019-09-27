@@ -323,6 +323,26 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   color: #364459;
 }
 
+.choice-location__text--input {
+  display: none;
+  border: none;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: 0.47px;
+  margin-bottom: 5px;
+}
+
+.choice-location__text--input:focus {
+  outline: none;
+}
+
+.choice-location__text--input::-webkit-input-placeholder {
+  opacity: 0.29;
+  color: #364459;
+}
+
 .choice-location__arrow {
   background: #fff;
   height: 1px;
@@ -507,6 +527,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     height: 60px;
     padding: 0 0 0 18px;
     border-left: 0;
+    cursor: pointer;
   }
   .choice-location__item:nth-child(1) {
     padding: 0px 0 0px 27px;
@@ -531,22 +552,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   .choice-location__text p {
     margin-bottom: 5px;
-  }
-  .choice-location__text--input {
-    border: none;
-    font-family: "Libre Franklin", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.57;
-    letter-spacing: 0.47px;
-    margin-bottom: 5px;
-  }
-  .choice-location__text--input:focus {
-    outline: none;
-  }
-  .choice-location__text--input::-webkit-input-placeholder {
-    opacity: 0.29;
-    color: #364459;
   }
   .choice-location__arrow {
     width: 30px;

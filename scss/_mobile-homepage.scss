@@ -94,7 +94,7 @@
     position: static;
     height: auto;
     background-image: url("../img/jasper-van-der-meij-unsplash-mobile.png");
-    padding-bottom: 47px; // когда 1 итем в списке в main__footer
+    padding-bottom: 47px; 
 
     &__left-side-block {
       width: 375px;
@@ -152,6 +152,7 @@
       height: 60px;
       padding: 0 0 0 18px;
       border-left: 0;
+      cursor: pointer;
 
       &:nth-child(1) {
         padding: 0px 0 0px 27px;
@@ -180,25 +181,6 @@
     &__text {
       p {
         margin-bottom: 5px;
-      }
-
-      &--input {
-        border: none;
-        font-family: "Libre Franklin", sans-serif;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.57;
-        letter-spacing: 0.47px;
-        margin-bottom: 5px;
-
-        &:focus {
-          outline: none;
-        }
-
-        &::-webkit-input-placeholder {
-          opacity: 0.29;
-          color: #364459;
-        }
       }
     }
 
