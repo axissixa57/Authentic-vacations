@@ -438,12 +438,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-radius: 30px;
     background-color: #43d9d1;
   }
-  .remove-all-styles {
-    all: initial;
-  }
-  .remove-all-styles * {
-    all: unset;
-  }
   .main {
     display: block;
     height: 717px;
@@ -490,9 +484,70 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     display: block;
     position: absolute;
     bottom: 0;
+    left: 20px;
     width: 335px;
     height: 239px;
     background-color: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .choice-location__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .choice-location__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0px 0 0 18px;
+    border-left: 0;
+  }
+  .choice-location__item:nth-child(1) {
+    padding: 0px 0 0px 27px;
+    width: 100%;
+  }
+  .choice-location__item:nth-child(2) {
+    width: 100%;
+  }
+  .choice-location__item:nth-child(3) {
+    width: 100%;
+  }
+  .choice-location__item:nth-child(4) {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .choice-location__text p {
+    margin-bottom: 5px;
+  }
+  .choice-location__text--input {
+    border: none;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.47px;
+    margin-bottom: 5px;
+  }
+  .choice-location__text--input:focus {
+    outline: none;
+  }
+  .choice-location__text--input::-webkit-input-placeholder {
+    opacity: 0.29;
+    color: #364459;
+  }
+  .choice-location__arrow {
+    width: 30px;
   }
   .footer {
     display: none;
