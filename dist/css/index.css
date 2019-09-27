@@ -444,13 +444,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   .main {
     display: block;
-    height: 717px;
+    position: static;
+    height: auto;
+    background-image: url("../img/jasper-van-der-meij-unsplash-mobile.png");
+    padding-bottom: 47px;
   }
   .main__left-side-block {
-    position: relative;
     width: 375px;
-    height: 717px;
-    background-image: url("../img/jasper-van-der-meij-unsplash-mobile.png");
+    background-color: transparent;
   }
   .main__left-side-block .sidebar {
     display: -webkit-box;
@@ -485,9 +486,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     display: none;
   }
   .main__footer {
-    position: absolute;
-    bottom: 0;
-    left: 20px;
+    position: static;
+    margin-top: 110px;
+    margin-left: 20px;
   }
   .choice-location__list {
     -webkit-box-orient: vertical;
@@ -512,12 +513,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     width: 100%;
   }
   .choice-location__item:nth-child(2) {
+    display: none;
     width: 100%;
   }
   .choice-location__item:nth-child(3) {
+    display: none;
     width: 100%;
   }
   .choice-location__item:nth-child(4) {
+    display: none;
     padding: 0;
     margin: 0;
     width: 100%;

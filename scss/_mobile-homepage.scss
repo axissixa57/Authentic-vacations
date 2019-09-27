@@ -91,13 +91,14 @@
 
   .main {
     display: block;
-    height: 717px;
+    position: static;
+    height: auto;
+    background-image: url("../img/jasper-van-der-meij-unsplash-mobile.png");
+    padding-bottom: 47px; // когда 1 итем в списке в main__footer
 
     &__left-side-block {
-      position: relative;
       width: 375px;
-      height: 717px;
-      background-image: url("../img/jasper-van-der-meij-unsplash-mobile.png");
+      background-color: transparent;
 
       .sidebar {
         display: flex;
@@ -133,11 +134,9 @@
     }
 
     &__footer {
-      // display: block;
-      position: absolute;
-      bottom: 0;
-      left: 20px;
-      // box-shadow: none;
+      position: static;
+      margin-top: 110px;
+      margin-left: 20px;
     }
   }
 
@@ -159,12 +158,15 @@
         width: 100%;
       }
       &:nth-child(2) {
+        display: none;
         width: 100%;
       }
       &:nth-child(3) {
+        display: none;
         width: 100%;
       }
       &:nth-child(4) {
+        display: none;
         padding: 0;
         margin: 0;
         width: 100%;
