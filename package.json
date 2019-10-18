@@ -1,0 +1,26 @@
+{
+  "name": "authentic-vacations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp default",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axissixa57/Authentic-vacations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://axissixa57.github.io/Authentic-vacations/",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}

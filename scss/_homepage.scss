@@ -1,21 +1,37 @@
-.header {
-  display: flex;
-  height: 89px;
+.wrapper {
+  width: 1112px;
+  height: 100%;
+  margin: 0 auto;
 }
 
-.logo {
-  width: 478px;
+.navbar {
+  position: relative;
+  width: 100vw;
+  height: 89px;
   background-color: #ebf3ff;
-  &__image {
-    margin: 18px 131px 18px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    height: 89px;
+  }
+
+  &__nav {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 205px);
+    width: calc(50% + 205px);
+    background-color: #fff;
   }
 }
 
-.menu {
+.logo {
   display: flex;
+  align-items: center;
+}
 
-  width: 888px;
-
+.menu {
   &__list {
     display: flex;
     justify-content: space-evenly;
