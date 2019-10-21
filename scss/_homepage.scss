@@ -20,8 +20,8 @@
     display: flex;
     position: absolute;
     top: 0;
-    left: calc(50% - 205px);
-    width: calc(50% + 205px);
+    left: calc(50% - 208px);
+    width: calc(50% + 208px);
     background-color: #fff;
   }
 }
@@ -29,18 +29,31 @@
 .logo {
   display: flex;
   align-items: center;
+
+  img {
+    padding-left: 5px;
+  }
 }
 
 .menu {
   &__list {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    flex: 1 1;
+    width: 100%;
   }
 
   &__item {
     list-style-type: none;
+
+    &:nth-child(1) {
+      padding-left: 92px;
+    }
+    &:nth-child(2) {
+      padding-left: 83px;
+    }
+    &:nth-child(3) {
+      padding-left: 74px;
+    }
   }
 
   &__link {
@@ -62,20 +75,62 @@
   }
 
   &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 89px;
+    position: relative;
     height: 89px;
     border-left: solid 0.5px #8ca0bf;
 
+    &:nth-child(1) {
+      width: 88px;
+    }
+    &:nth-child(2) {
+      width: 89px;
+    }
+    &:nth-child(3) {
+      width: 85px;
+    }
+
     &:hover {
       cursor: pointer;
-      // background-color: #0d3a7f;
     }
 
     &--dark-blue {
       background-color: #0d3a7f;
+    }
+  }
+
+  &__phone-icon {
+    &::after {
+      content: url("../img/call-icon.svg");
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__account-icon {
+    &::after {
+      content: url("../img/account.svg");
+      width: 12px;
+      height: 19px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__account-cart {
+    &::after {
+      content: url("../img/cart-icon.svg");
+      width: 20px;
+      height: 19px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }
