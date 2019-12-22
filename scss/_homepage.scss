@@ -1,3 +1,13 @@
+// PixelPerfect - width: 1385px
+
+$fontLibreFranklin: 'Libre Franklin', sans-serif;
+
+$aliceblue: #ebf3ff;
+$white: #fff;
+$bluey-grey: rgba(140, 160, 191, 0.7);
+$darkslategray: #364459;
+$dark-blue: #0d3a7f;
+
 .wrapper {
   width: 1112px;
   height: 100%;
@@ -6,65 +16,131 @@
 
 .navbar {
   position: relative;
-  width: 100vw;
+  max-width: 100vw;
   height: 89px;
-  background-color: #ebf3ff;
+  background-color: $aliceblue;
 
-  &__header {
+  .navbar__header {
     display: flex;
     align-items: center;
     height: 89px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        padding-left: 5px;
+      }
+    }
+
+    .button {
+      display: none;
+    }
   }
 
-  &__nav {
+  .navbar__nav {
     display: flex;
     position: absolute;
     top: 0;
-    left: calc(50% - 208px);
-    width: calc(50% + 208px);
-    background-color: #fff;
-  }
-}
+    left: calc(50% - 205px);
+    width: calc(50% + 205px);
+    height: 89px;
+    background-color: $white;
 
-.logo {
-  display: flex;
-  align-items: center;
+    .list {
+      display: flex;
+      align-items: center;
+      width: 100%;
 
-  img {
-    padding-left: 5px;
-  }
-}
+      .item {
+        list-style-type: none;
+        &:nth-child(1) {
+          padding-left: 89px;
+        }
+        &:nth-child(2) {
+          padding-left: 83px;
+        }
+        &:nth-child(3) {
+          padding-left: 74px;
+        }
 
-.menu {
-  &__list {
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
+        .link {
+          font-family: $fontLibreFranklin;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 1.83;
+          letter-spacing: 0.6px;
+          color: $darkslategray; 
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
 
-  &__item {
-    list-style-type: none;
+      &--icons {
+        width: auto;
 
-    &:nth-child(1) {
-      padding-left: 92px;
+        .item {
+          position: relative;
+          height: 89px;
+          border-left: solid 0.5px $bluey-grey;
+
+          &:nth-child(1) {
+            width: 88px;
+          }
+          &:nth-child(2) {
+            width: 88px;
+          }
+          &:nth-child(3) {
+            width: 87px;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          &--dark-blue {
+            background-color: $dark-blue;
+          }
+        }
+
+        .phone-icon {
+          &::after {
+            content: url("../img/call-icon.svg");
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        .account-icon {
+          &::after {
+            content: url("../img/account.svg");
+            width: 12px;
+            height: 19px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        .account-cart {
+          &::after {
+            content: url("../img/cart-icon.svg");
+            width: 20px;
+            height: 19px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
     }
-    &:nth-child(2) {
-      padding-left: 83px;
-    }
-    &:nth-child(3) {
-      padding-left: 74px;
-    }
-  }
-
-  &__link {
-    font-family: "Libre Franklin", sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 1.83;
-    letter-spacing: 0.6px;
-    color: #364459;
-    text-transform: uppercase;
-    text-decoration: none;
   }
 }
 
@@ -72,66 +148,6 @@
   &__list {
     display: flex;
     width: 262px;
-  }
-
-  &__item {
-    position: relative;
-    height: 89px;
-    border-left: solid 0.5px #8ca0bf;
-
-    &:nth-child(1) {
-      width: 88px;
-    }
-    &:nth-child(2) {
-      width: 89px;
-    }
-    &:nth-child(3) {
-      width: 85px;
-    }
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    &--dark-blue {
-      background-color: #0d3a7f;
-    }
-  }
-
-  &__phone-icon {
-    &::after {
-      content: url("../img/call-icon.svg");
-      width: 18px;
-      height: 18px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  &__account-icon {
-    &::after {
-      content: url("../img/account.svg");
-      width: 12px;
-      height: 19px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  &__account-cart {
-    &::after {
-      content: url("../img/cart-icon.svg");
-      width: 20px;
-      height: 19px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
   }
 }
 
@@ -386,4 +402,37 @@
 
 .footer {
   height: 57px;
+}
+
+@media screen and (max-width: 1112px) {
+  .wrapper {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .navbar {
+    height: 100%;
+
+    .navbar__header {
+      height: 60px;
+
+      .logo {
+        border-left: solid 1px $bluey-grey;
+        height: 55px;
+        position: relative;
+
+        img {
+          width: 108px;
+          height: 44px;
+          position: absolute;
+          top: 7px;
+          left: 19px;
+        }
+      }
+    }
+
+    .navbar__nav {
+      display: none;
+    }
+  }
 }
