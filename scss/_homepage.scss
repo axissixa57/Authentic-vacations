@@ -14,6 +14,8 @@ $dark-blue: #0d3a7f;
   margin: 0 auto;
 }
 
+ /* Header */
+
 .navbar {
   position: relative;
   max-width: 100vw;
@@ -144,11 +146,13 @@ $dark-blue: #0d3a7f;
   }
 }
 
-.menu-services {
-  &__list {
-    display: flex;
-    width: 262px;
-  }
+ /* Section: Intro */
+.intro {
+  position: relative;
+  max-width: 100vw;
+  height: 100%;
+  background-color: $dark-blue;
+  margin-bottom: 57px;
 }
 
 .main {
