@@ -7,7 +7,7 @@
     <title>AV_Homepage</title>
     <link rel="stylesheet" href="./css/index.min.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500,600,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500,600,700,900&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -78,7 +78,7 @@
                     <a href="#" class="button">Create an Account</a>
                     <p class="reg">Have an Account Already? <a class="link" href="#">Login Now</a></p>
                 </div>
-                <div class="intro__form">
+                <form class="intro__form">
                     <div class="content content--left">
                         <input type="text" class="place" placeholder="Where do you want to go?">
                     </div>
@@ -87,14 +87,14 @@
                         <input type="text" class="duration" placeholder="Duration">
                         <button class="button"></button>
                     </div>
-                </div>
+                </form>
             </div>
-            <!-- <div class="intro__slider">
+            <div class="intro__slider">
                 <div class="nav">
                     <span></span>
                     <span></span>
                     <span></span>
-                    <span></span>
+                    <span class="active"></span>
                 </div>
                 <ul class="list">
                     <li class="item item--active">
@@ -104,11 +104,12 @@
                         </div>
                     </li>
                 </ul>
-            </div> -->
+            </div>
         </section>
     </main>
 
-    <footer class="footer"></footer>
+    <!-- <footer class="footer"></footer> -->
+    <footer></footer>
     <script>
       const choiceLocationItemsExceptFirst = $(
         ".choice-location__item:not(:first-child)"
